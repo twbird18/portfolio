@@ -14,7 +14,7 @@ body{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     margin: 0;
     position:relative;
-    width: 100%;
+    overflow: hidden;
     padding-left: 125px!important;
 
 }
@@ -23,17 +23,25 @@ body{
     background-color: @color1;
     color:@color3;
     width: 125px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow:15px 0 10px rgba(201,192,237,1);
 }
 
 #content{
-    border: 2px @color2;
-
+    border: 2px solid @color2;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: auto 15px;
 }
 
-#skills{
-    border: 2px @color2;
-    display: flex;
-    width: 33%;
+.skills{
+    border: 2px  solid @color2;
+    width: 28%;
     padding:20px;
+    margin:15px auto 0;
     text-align: center;
 }
