@@ -1,0 +1,39 @@
+@color0:#091540; //alt text
+@color1:#3d206d; //background
+@color2:#c9c0ed; //accent color
+@color3:#ffffff; //light color
+@color4:#000000; //dark color
+@font-size:1.25em;
+
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Sedgwick+Ave+Display&display=swap');
+//Sedgwick Title Fonts, Roboto Main Text, Oswald Subtitles
+
+body{
+    background-color: @color3;
+    color: @color4;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    position:relative;
+    width: 100%;
+    padding-left: 125px!important;
+
+}
+
+#sidebar{
+    background-color: @color1;
+    color:@color3;
+    width: 125px;
+}
+
+#content{
+    border: 2px @color2;
+
+}
+
+#skills{
+    border: 2px @color2;
+    display: flex;
+    width: 33%;
+    padding:20px;
+    text-align: center;
+}
