@@ -20,6 +20,13 @@ body{
     grid-template-areas: "sidebar navigation" "sidebar main" "footer footer";
 }
 
+i.fas{
+    color: @color1;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
 .sidebar { 
     grid-area: sidebar; 
 }
@@ -83,7 +90,15 @@ body{
 
 .main { 
     grid-area: main; 
-background-color: @color3;
+    background-color: @color3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+
+    
 }
 
 .footer, .footer p{ grid-area: footer; 
@@ -94,11 +109,6 @@ text-align: center;
 margin: 0;
 }
 
-
-
-#main{
-    padding: 15px;
-}
 
 .sidebar{
     background-color: @color1;
@@ -167,10 +177,19 @@ div[class*="skillset"]{
 
 .skills{
     border: 2px  solid @color2;
-    width: 28%;
+    width: 75%;
+    height: 75%;
     padding:20px;
-    margin:15px auto 0;
     text-align: center;
+
+    display: grid;
+    grid-template-rows: 0.5fr 0.3fr 1fr;
+    grid-template-columns: 1.5fr;
+
+    h3{
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.5em;
+    }
 }
 
 #logo{
