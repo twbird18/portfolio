@@ -25,12 +25,16 @@ body{
 #sidebar{
     background-color: @color1;
     color:@color3;
-    width: 125px;
+    width: 300px;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
+    text-align: center;
     box-shadow:15px 0 10px rgba(201,192,237,1);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 #content{
@@ -47,4 +51,8 @@ body{
     padding:20px;
     margin:15px auto 0;
     text-align: center;
+}
+
+#logo{
+    width: 250px;
 }
