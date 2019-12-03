@@ -127,6 +127,26 @@ body{
     }
 }
 
+#contactinfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "contactform pricing";
+
+    #contactform{
+        grid-area: contactform;
+        height: 80%;
+        border: 1px solid black;
+    }
+
+    #pricing{
+        grid-area: pricing;
+        height: 80%;
+        border: 1px solid black;
+    }
+}
+
 .footer, .footer p{ grid-area: footer; 
 background-color: @color4;
 font-size: 1em;
