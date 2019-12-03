@@ -8,6 +8,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Sedgwick+Ave+Display|Rock+Salt&display=swap');
 //Sedgwick Title Fonts, Roboto Main Text, Oswald Subtitles, Rock Salt "cursive"
 
+html, body{
+    height: 100%;
+}
 body{
     background-color: @color3;
     color: @color4;
@@ -71,13 +74,13 @@ body{
   font-size: 1.2em;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: @color4;
 }
 
 .navLinks:hover {
-  color: white;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  color: @color3;
+  border-left: 1px solid @color1;
+  border-right: 1px solid @color1;
   padding: 1em 1em;
 }
 
@@ -94,6 +97,34 @@ body{
     align-items: center;
 
     
+}
+
+#aboutme{
+    grid-area: main;
+    margin: 20px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    #about{
+        width: 80%;
+        height: 80%;
+        margin:  auto;
+       img{
+            float: left;
+        }
+        p{
+            font-size: 1.2em;
+        }
+    }
+    button{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 25%;
+        margin: auto;
+    }
 }
 
 .footer, .footer p{ grid-area: footer; 
@@ -119,6 +150,20 @@ margin: 0;
     font-family: 'Rock Salt', cursive;
     font-size: 1.5em;
     margin: 0;
+    a{
+        color: @color3;
+        text-decoration: none;
+    :hover{
+        color: @color4;
+    }
+    :visited{
+        color: @color0;
+    }
+    :active{
+        color: @color0;
+    }
+
+}
 }
 #contactinfo{
     grid-row-start: 2;
@@ -175,7 +220,7 @@ div[class*="skillset"]{
 border-radius: 25px;
 -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 2px 2px 3px 2px rgba(0,0,0,0); 
 box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 2px 2px 3px 2px rgba(0,0,0,0);
-    width: 75%;
+    width: 65%;
     height: 75%;
     padding:20px;
     text-align: center;
@@ -194,6 +239,9 @@ box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 
     h3{
         font-family: 'Oswald', sans-serif;
         font-size: 1.5em;
+    }
+    ul{
+        list-style: none;
     }
 }
 
