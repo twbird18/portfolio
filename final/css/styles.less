@@ -18,8 +18,8 @@ body{
     margin: 0;
     width: 100%;
     display:grid;
-    grid-template-columns: 0.1fr 3fr;
-    grid-template-rows: 0.2fr 2.8fr 2%;
+    grid-template-columns: 0.2fr 3fr;
+    grid-template-rows: 0.25fr 2.8fr 2%;
     grid-template-areas: "sidebar navigation" "sidebar main" "footer footer";
 }
 
@@ -71,7 +71,7 @@ body{
 
 .navLinks {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.2em;
+  font-size: @font-size;
   text-transform: uppercase;
   text-decoration: none;
   color: @color4;
@@ -114,7 +114,7 @@ body{
             float: left;
         }
         p{
-            font-size: 1.2em;
+            font-size: @font-size;
         }
     }
     button{
@@ -132,7 +132,7 @@ body{
   list-style: none;
   text-align: center;
   background-color: #091540;
-  margin-right: 30px;
+  margin-right: auto;
   width: 75px;
   height: 40px;
 
@@ -140,8 +140,9 @@ body{
   text-decoration: none;
   color: #FFFFFF;
   display: block;
+  margin: auto;
   h3{
-      font-size: 0.75em;
+      font-size: @font-size - 0.5em;
   }
 
   :hover {
@@ -166,22 +167,27 @@ body{
 
         .all{
             grid-area: all;
+            margin:auto;
         }
 
         .websites{
             grid-area: websites;
+            margin: auto;
         }
 
         .design{
             grid-area: design;
+            margin: auto;
         }
 
         .javascript{
             grid-area: javascript;
+            margin: auto;
         }
 
         .office{
             grid-area: office;
+            margin:auto;
         }
     }
     #pages{
@@ -189,22 +195,24 @@ body{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        margin: auto;
         div [class*="all"]{
         flex: 1 1 auto;
-        padding: 25px;
-        margin: 10px;
+        text-align: center;
             img{
             width: 300px;
             max-width: 100%;
+            height: 200px;
+            border: 2px inset black;
+            margin: 50px;
+            padding: 25px;
             }
         }
 
     }
 }
 
-#contactinfo{
+#contactforminfo{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 25px;
@@ -226,7 +234,7 @@ body{
 
 .footer, .footer p{ grid-area: footer; 
 background-color: @color4;
-font-size: 1em;
+font-size: @font-size - 0.25em;
 color: white;
 text-align: center;
 margin: 0;
@@ -245,7 +253,7 @@ margin: 0;
 #name{
     grid-row-start: 1;
     font-family: 'Rock Salt', cursive;
-    font-size: 1.5em;
+    font-size: @font-size + 0.25em;
     margin: 0;
     a{
         color: @color3;
@@ -269,7 +277,7 @@ margin: 0;
 #skills{
     grid-row-start: 3;
     font-family: 'sedgwick';
-    font-size: 2.5em;
+    font-size: @font-size * 2;
     text-decoration: underline;
 }
 
@@ -300,7 +308,7 @@ margin: 0;
 div[class*="skillset"]{
     font-family: 'Oswald';
     h3{
-    font-size: 1.1em;
+    font-size: @font-size - .1em;
     margin: 0;}
 }
 
@@ -335,7 +343,7 @@ box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 
 
     h3{
         font-family: 'Oswald', sans-serif;
-        font-size: 1.5em;
+        font-size: @font-size + 0.25em;
     }
     ul{
         list-style: none;
