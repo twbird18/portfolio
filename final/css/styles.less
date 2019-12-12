@@ -9,8 +9,12 @@
 //Sedgwick Title Fonts, Roboto Main Text, Oswald Subtitles, Rock Salt "cursive"
 
 html, body{
-    height: 100%;
+    height: 100vh;
 }
+
+
+
+
 body{
     background-color: @color3;
     color: @color4;
@@ -158,6 +162,7 @@ body{
 #imgsort{
     display: grid;
     grid-template-rows: 0.1fr 1fr;
+    overflow: auto;
     #menu{
         grid-row: 1;
         display: grid;
@@ -169,27 +174,27 @@ body{
 
         .all{
             grid-area: all;
-            margin:auto;
+            
         }
 
         .websites{
             grid-area: websites;
-            margin: auto;
+           
         }
 
         .design{
             grid-area: design;
-            margin: auto;
+            
         }
 
         .javascript{
             grid-area: javascript;
-            margin: auto;
+            
         }
 
         .office{
             grid-area: office;
-            margin:auto;
+            
         }
     }
     #pages{
@@ -198,6 +203,8 @@ body{
         flex-wrap: wrap;
         flex-direction: row;
         margin: auto;
+        
+
         div [class*="all"]{
         flex: 1 1 auto;
         text-align: center;
