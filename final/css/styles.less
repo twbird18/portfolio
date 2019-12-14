@@ -12,9 +12,6 @@ html, body{
     height: 100vh;
 }
 
-
-
-
 body{
     background-color: @color3;
     color: @color4;
@@ -26,8 +23,6 @@ body{
     grid-template-rows: 0.25fr 2.8fr 2%;
     grid-template-areas: "sidebar navigation" "sidebar main" "footer footer";
 }
-
-
 
 .sidebar { 
     grid-area: sidebar; 
@@ -417,4 +412,34 @@ box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 
 .hide{
 
     display: none;
+}
+
+.samples{
+    grid-area: main;
+    text-align: center;
+    .sampleimg{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    figure{
+       width: 300px;
+            
+            background-color: @color0;
+            color: @color3;
+            height: 300px;
+            border: 2px inset black;
+            margin: 50px;
+            padding: 25px;
+            
+            img{
+                width: 275px;
+                transition: all .2s ease-in-out;
+                &:hover{
+                    
+                    transform: scale(4);
+                }
+            }
+    }
+}
 }
