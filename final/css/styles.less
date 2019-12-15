@@ -475,3 +475,42 @@ box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 
     }
 }
 }
+
+.samples{
+    grid-area: main;
+    text-align: center;
+    .logoimg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .logoimages{
+            display:table;
+        }
+        
+    figure{
+       width: 300px;
+            float: left;
+            background-color: @color0;
+            color: @color3;
+            height: 300px;
+            border: 2px inset black;
+            margin: 50px;
+            padding: 25px;
+            
+            img{
+                width: 275px;
+                transition: all .2s ease-in-out;
+                &:hover{
+                    
+                    transform: scale(4);
+                }
+            }
+           
+    }
+     p{
+                display:table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+}
+}
