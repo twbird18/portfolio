@@ -229,22 +229,21 @@ div.cardfan:hover img:last-child {
     }
     #pages{
         grid-row: 2;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
         margin: auto;
         
 
         div [class*="all"]{
-        flex: 1 1 auto;
+        display: flex;
+            flex-wrap: wrap;   
         text-align: center;
-            img{
-            width: 400px;
-            max-width: 100%;
+            figure{
+             
+            width: 350px;
             height: 300px;
-            border: 2px inset black;
-            margin: 50px;
-            padding: 25px;
+            
+                img{
+                    max-width: 100%;
+                }
             }
         }
 
