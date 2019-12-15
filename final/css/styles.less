@@ -185,6 +185,35 @@ body{
 
         .design{
             grid-area: design;
+            .cardfan { 
+  height: 356px; 
+  width: 700px; 
+  margin: 2rem auto 0;
+  position: relative; 
+
+img { 
+  position: absolute; 
+  left: 200px; 
+  width: 300px; 
+  height: 200px; 
+  border: 12px solid #ffe; 
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2); 
+  transform-origin: center 400px; 
+  transition: all .6s linear; 
+}
+div.cardfan img:first-child { 
+  transform: rotate(5deg);  
+}
+div.cardfan img:last-child { 
+  transform: rotate(-5deg); 
+}
+div.cardfan:hover img:first-child { 
+  transform: rotate(25deg); 
+}
+div.cardfan:hover img:last-child { 
+  transform: rotate(-25deg);  
+}
+            }
             
         }
 
