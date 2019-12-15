@@ -185,6 +185,7 @@ body{
 
         .design{
             grid-area: design;
+            /**
             .cardfan { 
   height: 356px; 
   width: 700px; 
@@ -213,7 +214,7 @@ div.cardfan:hover img:first-child {
 div.cardfan:hover img:last-child { 
   transform: rotate(-25deg);  
 }
-            }
+            }*/
             
         }
 
@@ -459,17 +460,18 @@ box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 
             
             background-color: @color0;
             color: @color3;
-            height: 300px;
+            height: 250px;
             border: 2px inset black;
             margin: 50px;
             padding: 25px;
             
             img{
                 width: 275px;
+                height: 90%;
                 transition: all .2s ease-in-out;
                 &:hover{
                     
-                    transform: scale(4);
+                    transform: scale(3);
                 }
             }
     }
@@ -485,6 +487,9 @@ box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 
         justify-content: center;
         .logoimages{
             display:table;
+            border: 2px inset ;
+            width: 80%;
+            margin: 20px auto 0;
         }
         
     figure{
@@ -492,17 +497,18 @@ box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 
             float: left;
             background-color: @color0;
             color: @color3;
-            height: 300px;
+            
             border: 2px inset black;
-            margin: 50px;
-            padding: 25px;
+            
+            padding: 15px;
             
             img{
                 width: 275px;
+                height: 90%;
                 transition: all .2s ease-in-out;
                 &:hover{
                     
-                    transform: scale(4);
+                    transform: scale(3);
                 }
             }
            
