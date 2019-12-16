@@ -28,8 +28,7 @@ body{
     grid-area: sidebar; 
     #contactlinks a, a:hover, a:visited, a:active{
         text-decoration: none;
-        color:@color3;
-  
+        color:@color3;  
     }
 }
 
@@ -88,8 +87,6 @@ body{
   padding: 1em 1em;
 }
 
-
-
 .main { 
     grid-area: main; 
     background-color: @color3;
@@ -106,8 +103,7 @@ body{
 #aboutme{
     grid-area: main;
     margin: 20px;
-    display: flex;
-    
+    display: flex;    
     position: relative;
     #about{
         width: 80%;
@@ -134,35 +130,33 @@ body{
        height: 100vh;
        
     }
-
 }
 //style menu links as buttons for image sorting
 .button li {
-  float: left;
-  list-style: none;
-  text-align: center;
-  background-color: #091540;
-  margin-right: auto;
-  width: 100px;
-  height: 50px;
-  font-size: @font-size;
-  
+    float: left;
+    list-style: none;
+    text-align: center;
+    background-color: #091540;
+    margin-right: auto;
+    width: 100px;
+    height: 50px;
+    font-size: @font-size; 
 
     a {
-  text-decoration: none;
-  color: #FFFFFF;
-  display: block;
-  margin: auto;
-  h3{
-      font-size: @font-size - 0.5em;
-  }
+        text-decoration: none;
+        color: #FFFFFF;
+        display: block;
+        margin: auto;
+        h3{
+            font-size: @font-size - 0.5em;
+        }
 
-  :hover {
-  text-decoration: none;
-  color: #000000;
-  background-color: #33B5E5;
-}
-}
+        :hover {
+            text-decoration: none;
+            color: #000000;
+            background-color: #33B5E5;
+        }
+    }
 }
 
 #imgsort{
@@ -173,94 +167,46 @@ body{
         grid-row: 1;
         display: grid;
         grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr;
-        grid-template-rows: 1fr;
-        
+        grid-template-rows: 1fr;        
         grid-gap: 10px;
         grid-template-areas: ". all websites design javascript office .";
-
         .all{
-            grid-area: all;
-            
+            grid-area: all;            
         }
-
         .websites{
             grid-area: websites;
-           
         }
-
         .design{
             grid-area: design;
-            /**
-            .cardfan { 
-  height: 356px; 
-  width: 700px; 
-  margin: 2rem auto 0;
-  position: relative; 
-
-img { 
-  position: absolute; 
-  left: 200px; 
-  width: 300px; 
-  height: 200px; 
-  border: 12px solid #ffe; 
-  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2); 
-  transform-origin: center 400px; 
-  transition: all .6s linear; 
-}
-div.cardfan img:first-child { 
-  transform: rotate(5deg);  
-}
-div.cardfan img:last-child { 
-  transform: rotate(-5deg); 
-}
-div.cardfan:hover img:first-child { 
-  transform: rotate(25deg); 
-}
-div.cardfan:hover img:last-child { 
-  transform: rotate(-25deg);  
-}
-            }*/
-            
         }
-
         .javascript{
             grid-area: javascript;
-            
         }
-
         .office{
             grid-area: office;
-            
         }
     }
     #pages{
         grid-row: 2;
         margin: auto;
-        
-
         div [class*="all"]{
-        display: flex;
+            display: flex;
             flex-wrap: wrap;   
-        text-align: center;
-        justify-content: center;
+            text-align: center;
+            justify-content: center;
             figure{
-            border: 2px inset @color2;
-            background-color: lighten(@color0, 80%);
-           
-            width: 350px;
-            height: 300px;
-            
+                border: 2px inset @color2;
+                background-color: lighten(@color0, 80%);
+                width: 350px;
+                height: 300px;            
                 img{
                     width: 325px;
                     height: 250px;
                 }
             }
-            
         }
-
     }
 }
-
 #contactforminfo{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -268,48 +214,41 @@ div.cardfan:hover img:last-child {
     grid-template-rows: 1fr;
     grid-template-areas: "contactform pricing";
     margin: auto;
-
     #contactform{
         grid-area: contactform;
         height: 80%;
-        #logo{
-    
-    width: 300px;
-    display: block;
-    margin: 0 auto;
-}
-
-.content{
-    width: 75%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 30% 5% auto;
+        #logo{    
+            width: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+        .content{
+            width: 75%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 30% 5% auto;
             label {
-  text-align: right;
-  grid-column: 1;
-}
-#submit{
-    grid-column: 1;
-}
+                text-align: right;
+                grid-column: 1;
+            }
+        #submit{
+            grid-column: 1;
+        }
 
-input, #comments{
-    grid-column: 3;
+        input, #comments{
+            grid-column: 3;
+        }
+        #comments{
+            width: 100%;
+            height: 250px;
+        }
+        #submit, #reset{
+            width: 100px;
+            display: block;
+            margin: 0 auto;            
+        }
+    }
 }
-#comments{
-    width: 100%;
-    height: 250px;
-}
-#submit, #reset{
-    width: 100px;
-    display: block;
-    margin: 0 auto;
-    
-}
-
-}
-
-   }
-
     #pricing{
         grid-area: pricing;
         height: 80%;
@@ -321,19 +260,17 @@ input, #comments{
             caption{
                 background-color: @color2; 
             }
-        }
-        
+        }        
     }
 }
 
 .footer, .footer p{ grid-area: footer; 
-background-color: @color4;
-font-size: @font-size - 0.25em;
-color: white;
-text-align: center;
-margin: 0;
-}
-
+    background-color: @color4;
+    font-size: @font-size - 0.25em;
+    color: white;
+    text-align: center;
+    margin: 0;
+    }
 
 .sidebar{
     background-color: @color1;
@@ -352,17 +289,16 @@ margin: 0;
     a{
         color: @color3;
         text-decoration: none;
-    :hover{
-        color: @color4;
+        :hover{
+            color: @color4;
+        }
+        :visited{
+            color: @color0;
+        }
+        :active{
+            color: @color0;
+        }
     }
-    :visited{
-        color: @color0;
-    }
-    :active{
-        color: @color0;
-    }
-
-}
 }
 #contactinfo{
     grid-row-start: 2;
@@ -372,8 +308,7 @@ margin: 0;
     grid-row-start: 3;
     font-family: 'sedgwick';
     font-size: @font-size * 2;
-    text-decoration: underline;
-    
+    text-decoration: underline;    
 }
 
 .skillset1{
@@ -403,39 +338,35 @@ margin: 0;
 div[class*="skillset"]{
     font-family: 'Oswald';
     h3{
-    font-size: @font-size - .1em;
-    margin: 0;}
-}
-
-#content{
-    border: 2px solid @color2;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    margin: auto 15px;
-}
+        font-size: @font-size - .1em;
+        margin: 0;}
+    }
+    #content{
+        border: 2px solid @color2;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        margin: auto 15px;
+    }
 
 .skills{
     border: 5px inset @color2;
-border-radius: 25px;
--webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 2px 2px 3px 2px rgba(0,0,0,0); 
-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 2px 2px 3px 2px rgba(0,0,0,0);
+    border-radius: 25px;
+    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 2px 2px 3px 2px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 2px 2px 3px 2px rgba(0,0,0,0);
     width: 65%;
     height: 75%;
     padding:20px;
     text-align: center;
-
     display: grid;
     grid-template-rows: 0.5fr 0.3fr 1fr;
-    grid-template-columns: 1.5fr;
-    
+    grid-template-columns: 1.5fr;    
     i.fas{
-    color: @color1;
-    display: flex;
-    place-content: center;
-    align-items: center;
-}
-
+        color: @color1;
+        display: flex;
+        place-content: center;
+        align-items: center;
+    }
     h3{
         font-family: 'Oswald', sans-serif;
         font-size: @font-size + 0.25em;
