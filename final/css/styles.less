@@ -449,3 +449,45 @@ div[class*="skillset"]{
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .sidebar{
+        display: none;
+    }
+    .navigation{
+        grid-template-rows: repeat(4, 3fr);
+        grid-template-columns: unset;
+        .logo{
+            display:none;
+        }
+        
+        .nav1{
+            grid-row: 1;
+            grid-column: unset;
+        }
+        .nav2{
+            grid-row: 2;
+            grid-column: unset;
+        }
+        .nav3{
+            grid-row: 3;
+            grid-column: unset;
+        }
+        .nav4{
+            grid-row: 4;
+            grid-column: unset;
+        }
+    }
+
+    .main{
+        grid-template-columns: none;
+        width: 100%;
+        
+        .skills{
+            -webkit-box-shadow: unset;
+            box-shadow: unset;
+
+        }
+    }
+
+}
