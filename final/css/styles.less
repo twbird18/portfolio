@@ -451,6 +451,9 @@ div[class*="skillset"]{
 }
 
 @media only screen and (max-width: 600px) {
+    body{
+        display: block;
+    }
     .sidebar{
         display: none;
     }
@@ -487,6 +490,20 @@ div[class*="skillset"]{
             -webkit-box-shadow: unset;
             box-shadow: unset;
 
+        }
+    }
+
+    .imgsort{
+        display: flex;
+        flex-wrap: wrap;
+
+        .menu{
+            display: flex;
+            flex-wrap: wrap;
+
+            button{
+                margin: 5px;
+            }
         }
     }
 
